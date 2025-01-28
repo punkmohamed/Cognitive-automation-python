@@ -77,7 +77,7 @@ def extract_email_body(msg):
         return "Email body is empty or could not be decoded."
     except Exception as e:
         logging.error(f"Error decoding email: {e}")
-        return f"Error decoding email: {e}"
+        return "Error decoding email"
 
 # Function to categorize the email body
 def categorizeEmail(body):
